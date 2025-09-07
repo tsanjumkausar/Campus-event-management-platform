@@ -1,6 +1,6 @@
 # Campus Event Management Platform
 
-This project is a simple **campus event reporting system** I built. The idea is that colleges can create different events (seminars, workshops, fests, etc.), and students can **register, mark attendance, and give feedback** for them.  
+This project is a simple **Campus event reporting system** I built. The idea is that colleges can create different events (seminars, workshops, fests, etc.), and students can **register, mark attendance, and give feedback** for them.  
 
 I used **Flask for the backend** and **SQLite as the database**. I created tables for things like colleges, students, events, registrations, attendance, and feedback. I also added some rules to keep the data clean—for example:
 - A student can’t register twice for the same event.  
@@ -83,6 +83,7 @@ This created CSV files inside the docs/reports/ folder.
 - Tech: Flask + SQLite + SQLAlchemy.
 - The data model and APIs are explained in DESIGN.md.
 - I also added AI conversation screenshots in the ai_log/ directory to keep track of how I discussed and built this.
+
 
 
 
