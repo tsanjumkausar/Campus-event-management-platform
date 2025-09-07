@@ -28,23 +28,23 @@ I tested all this with dummy data, ran the server, and checked the reports both 
 python -m venv .venv
 source .venv/bin/activate
 
-## 2. Install the dependencies
+### 2. Install the dependencies
 pip install -r requirements.txt
 
-## Initialize the Database with sample data
-## Run below command to Seeded sample data
+### Initialize the Database with sample data
+### Run below command to Seeded sample data
 python seed.py
 
 # Run the server
 python app.py
 
-## When I did this, I got output like:
+### When I did this, I got output like:
  * Running on all addresses (0.0.0.0)
  * Running on http://127.0.0.1:8000
  * Running on http://10.117.83.49:8000
-## Server at http://localhost:8000/health
+### Server at http://localhost:8000/health
 
-## When I opened http://127.0.0.1:8000/health
+### When I opened http://127.0.0.1:8000/health
 I saw this:
 
 */
@@ -83,6 +83,7 @@ This created CSV files inside the docs/reports/ folder.
 - Tech: Flask + SQLite + SQLAlchemy.
 - The data model and APIs are explained in DESIGN.md.
 - I also added AI conversation screenshots in the ai_log/ directory to keep track of how I discussed and built this.
+
 
 
 
