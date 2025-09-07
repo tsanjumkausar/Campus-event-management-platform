@@ -58,7 +58,7 @@ I saw this:
 
 ## Reports I Tried Out
 
-## I directly pasted these links in my browser to check the reports:
+### I directly pasted these links in my browser to check the reports:
 
 Event Popularity Report:
 http://127.0.0.1:8000/reports/event-popularity
@@ -70,19 +70,20 @@ Top Active Students (bonus):
 http://127.0.0.1:8000/reports/top-active-students
 
 
-## I also tried exporting reports using below command:
+### I also tried exporting reports using below command:
 python reports.py
 
-## It gave me output: 
+### It gave me output: 
 - Reports exported to docs/reports
 
 This created CSV files inside the docs/reports/ folder.
 
 
-## Notes From My Side
+### Notes From My Side
 - Tech: Flask + SQLite + SQLAlchemy.
 - The data model and APIs are explained in DESIGN.md.
 - I also added AI conversation screenshots in the ai_log/ directory to keep track of how I discussed and built this.
+
 
 
 
