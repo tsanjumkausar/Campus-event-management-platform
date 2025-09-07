@@ -1,4 +1,4 @@
-Campus Event Reporting Prototype
+Campus Event Management Platform
 
 ## Project Summary
 
@@ -77,3 +77,4 @@ This will create a CSV file in your docs/reports
 - Tech: Flask + SQLite + SQLAlchemy.
 - Data model & APIs are in `DESIGN.md`.
 - Added AI conversation screenshots to `ai_log/` directory.
+
