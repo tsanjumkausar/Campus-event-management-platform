@@ -1,47 +1,53 @@
-Campus Event Management Platform
+# Campus Event Management Platform
 
-## Project Summary
+## My Understanding of the Project
 
-This is a basic campus event reporting system. It allows colleges to create events such as seminars, workshops, or fests. Students can register, take attendance, and provide feedback.
+This project is a simple **campus event reporting system** I built. The idea is that colleges can create different events (seminars, workshops, fests, etc.), and students can **register, mark attendance, and give feedback** for them.  
 
-The backend is done using Flask and SQLite is used for the database. I created tables for colleges, students, events, registrations, attendance, and feedback. Rules such as "no duplicate registrations" and "feedback rating between 1–5" are maintained to keep it clean.
+I used **Flask for the backend** and **SQLite as the database**. I created tables for things like colleges, students, events, registrations, attendance, and feedback. I also added some rules to keep the data clean—for example:
+- A student can’t register twice for the same event.  
+- Feedback ratings must be between **1 and 5** only.  
 
-The system offers APIs to add events, enroll students, mark attendance, and receive feedback. Reports are created to verify:
+The system exposes a few APIs where you can:
+- Add new events  
+- Enroll/register students  
+- Mark attendance  
+- Collect feedback  
 
-what events are trending,
+From this, I also generated some reports like:  
+- Which events are trending  
+- How many events a student attended  
+- Who are the most active students  
 
-how many events a student attended,
+I tested all this with dummy data, ran the server, and checked the reports both in **JSON format (via APIs)** and in **CSV format (exported files)**.  
 
-and the most active students.
+---
 
-I have tested it by inserting dummy data, executing the server, and verifying the reports in JSON and CSV format.
+## How to Run It (Steps I Followed)
 
-## Quick Start
+### 1. Create and activate a virtual environment
 
-First run below commands:-
-
-## First Create and activate a virtual environment
 python -m venv .venv
 source .venv/bin/activate
 
-## And install all the requirements
+## 2. Install the dependencies
 pip install -r requirements.txt
 
-## Initialize DB with sample data
+## Initialize the Database with sample data
 ## Run below command to Seeded sample data
 python seed.py
 
-# Run server
+# Run the server
 python app.py
 
-## Once you run the above command you can see servers like this:-
+## When I did this, I got output like:
  * Running on all addresses (0.0.0.0)
  * Running on http://127.0.0.1:8000
  * Running on http://10.117.83.49:8000
 ## Server at http://localhost:8000/health
 
-## When you open http://127.0.0.1:8000/health
-you can see output like this -
+## When I opened http://127.0.0.1:8000/health
+I saw this:
 
 */
 
@@ -52,9 +58,9 @@ you can see output like this -
 /*
 
 
-## You can also try these endpoints
+## Reports I Tried Out
 
-## Try the below reports endpoints [you can directly paste them in browser so can access below reports]:
+## I directly pasted these links in my browser to check the reports:
 
 Event Popularity Report:
 http://127.0.0.1:8000/reports/event-popularity
@@ -66,15 +72,18 @@ Top Active Students (bonus):
 http://127.0.0.1:8000/reports/top-active-students
 
 
-## Next You Can Export CSV Reports by using below command:
+## I also tried exporting reports using below command:
 python reports.py
-## You can see output like this - 
+
+## It gave me output: 
 - Reports exported to docs/reports
-This will create a CSV file in your docs/reports
+
+This created CSV files inside the docs/reports/ folder.
 
 
-## Notes
+## Notes From My Side
 - Tech: Flask + SQLite + SQLAlchemy.
-- Data model & APIs are in `DESIGN.md`.
-- Added AI conversation screenshots to `ai_log/` directory.
+- The data model and APIs are explained in DESIGN.md.
+- I also added AI conversation screenshots in the ai_log/ directory to keep track of how I discussed and built this.
+
 
