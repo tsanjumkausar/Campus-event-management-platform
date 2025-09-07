@@ -31,8 +31,8 @@ source .venv/bin/activate
 ### 2. Install the dependencies
 pip install -r requirements.txt
 
-### Initialize the Database with sample data
-### Run below command to Seeded sample data
+### 3. Initialize the Database with sample data
+#### Run below command to Seeded sample data
 python seed.py
 
 ## Run the server
@@ -83,6 +83,7 @@ This created CSV files inside the docs/reports/ folder.
 - Tech: Flask + SQLite + SQLAlchemy.
 - The data model and APIs are explained in DESIGN.md.
 - I also added AI conversation screenshots in the ai_log/ directory to keep track of how I discussed and built this.
+
 
 
 
