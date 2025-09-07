@@ -79,10 +79,11 @@ python reports.py
 This created CSV files inside the docs/reports/ folder.
 
 
-### Notes From My Side
+## Notes From My Side
 - Tech: Flask + SQLite + SQLAlchemy.
 - The data model and APIs are explained in DESIGN.md.
 - I also added AI conversation screenshots in the ai_log/ directory to keep track of how I discussed and built this.
+
 
 
 
