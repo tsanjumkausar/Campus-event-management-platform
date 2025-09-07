@@ -35,7 +35,7 @@ pip install -r requirements.txt
 ### Run below command to Seeded sample data
 python seed.py
 
-# Run the server
+## Run the server
 python app.py
 
 ### When I did this, I got output like:
@@ -83,6 +83,7 @@ This created CSV files inside the docs/reports/ folder.
 - Tech: Flask + SQLite + SQLAlchemy.
 - The data model and APIs are explained in DESIGN.md.
 - I also added AI conversation screenshots in the ai_log/ directory to keep track of how I discussed and built this.
+
 
 
 
